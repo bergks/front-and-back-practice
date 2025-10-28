@@ -1,48 +1,75 @@
 <!DOCTYPE html>
-<html lamg = "ru">
+<html lang = "ru">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../style/styles.css">
         <title>Семестровая работа</title>
+        <script src="../js/themeChange.js" defer></script>
+        <script src="../js/good_cards.js" defer></script>
     </head>
     <body>
         <div class="page-container">
-            <div class="header">Хэдер</div>
-            <div class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" a href="contacts.html">Контакты</a></li>
+            <header class="header">
+                <h1 class="header__title">Хэдер</h1>
+                <p class="changeTheme" onclick="darkLight()" style="cursor:pointer;">Темная тема</p>
+            </header>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item "><a class="nav__link" href="../index.html">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+                    <li class="nav__item"><a class="nav__link" href="practices.html">Практики</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--active" href="goods.html">Товары</a></li>
+                    <li class="nav__item"><a class="nav__link" a href="contacts.html">Контакты</a></li>
                 </ul>
-            </div>
-            <div class="content">
-                    <div class="goods-header">
-                        <h1 class="goods-title">Наши товары</h1>
-                    </div>
-                    <div class="goods-container">
-                        <div class="good-card">
-                            <img class="good-img" src="../images/good1_book.jpg" alt="Товар книга 'Гарри Поттер и Философский камень'" width="200" height="200">
-                            <h2 class="good-title">Книга "Гарри Поттер и Философский камень"</h2>
-                            <p class="good-price">1000 p.</p>
-                        </div>
+            </nav>
+            <main class="content">
+                <section class="goods">
+                    <header class="goods__header">
+                        <h1 class="goods__title">Наши товары</h1>
+                    </header>
+                    <div class="goods__container">
+                        <section class="good__card">
+                            <img class="good__img" src="../images/good1_book.jpg" alt="Товар книга 'Гарри Поттер и Философский камень'" width="200" height="200">
+                            <h2 class="good__title">Книга "Гарри Поттер и Философский камень"</h2>
+                            <p class="good__price">1000 p.</p>
+                        </section>
 
-                        <div class="good-card">
-                            <img class="good-img" src="../images/good2_cake.jpg" alt="Товар: торт с ягодами" width="200" height="200">
-                            <h2 class="good-title">Торт с ягодами</h2>
-                            <p class="good-price">2500 p.</p>
-                        </div>
+                        <section class="good__card">
+                            <img class="good__img" src="../images/good2_cake.jpg" alt="Товар: торт с ягодами" width="200" height="200">
+                            <h2 class="good__title">Торт с ягодами</h2>
+                            <p class="good__price">2500 p.</p>
+                        </section>
 
-                        <div class="good-card">
-                            <img class="good-img" src="../images/good3_music.jpg" alt="Товар: пластинка группы 'Кино'"GIT  width="200" height="200">
-                            <h2 class="good-title">Пластинка группы "Кино" "Группа крови"</h2>
-                            <p class="good-price">3000 p.</p>
-                        </div>
+                        <section class="good__card">
+                            <img class="good__img" src="../images/good3_music.jpg" alt="Товар: пластинка группы 'Кино'"GIT  width="200" height="200">
+                            <h2 class="good__title">Пластинка группы "Кино" "Группа крови"</h2>
+                            <p class="good__price">3000 p.</p>
+                        </section>
+
+                        <section class="good__card">
+                            <img class="good__img" src="../images/good4_stitch.jpg" alt="Товар: плюшевая игрушка Стич"GIT  width="200" height="200">
+                            <h2 class="good__title">Плюшевая игрушка Стич</h2>
+                            <p class="good__price">1500 p.</p>
+                        </section>
+
+                        <section class="good__card">
+                            <img class="good__img" src="../images/good5_lights.jpeg" alt="Товар: гирлянда"GIT  width="200" height="200">
+                            <h2 class="good__title">Гирлянда</h2>
+                            <p class="good__price">300 p.</p>
+                        </section>
+
+                        <section class="good__card">
+                            <img class="good__img" src="../images/good6_cactus.jpg" alt="Товар: кактус в горшке"GIT  width="200" height="200">
+                            <h2 class="good__title">Кактус в горшке</h2>
+                            <p class="good__price">1200 p.</p>
+                        </section>
                     </div>
-            </div>
-            <div class="footer">Футер</div>
+                </section>
+                </main>
+            <footer class="footer">
+                <p class="footer__text">&copy; 2025 Мой сайт</p>
+            </footer>
         </div>
     </body>
 </html>
